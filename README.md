@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 117 papers · 50 production harnesses / essays / talks · last updated 2026-07-03**
+**Total: 116 papers · 50 production harnesses / essays / talks · last updated 2026-07-03**
 
 ## What is an agent harness?
 
@@ -207,7 +207,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models | [2310.04406](https://arxiv.org/abs/2310.04406) | [GitHub](https://github.com/lapisrocks/LanguageAgentTreeSearch) | 2024 | ICML 24 (arXiv:2310.04406) | MCTS, tree search, value function, self-reflection |
 | ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search | [2406.03816](https://arxiv.org/abs/2406.03816) | [GitHub](https://github.com/THUDM/ReST-MCTS) | 2024 | NeurIPS 24 (arXiv:2406.03816) | process reward, MCTS, self-training, reasoning |
 | ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving | [2309.17452](https://arxiv.org/abs/2309.17452) | [GitHub](https://github.com/microsoft/ToRA) | 2024 | ICLR 2024 | tool-integrated reasoning loop, code execution, outcome RL |
-| Search-o1: Agentic Search-Enhanced Large Reasoning Models with Autonomous Knowledge Exploration | [2501.05366](https://arxiv.org/abs/2501.05366) | [GitHub](https://github.com/RUC-NLPIR/Search-o1) | 2025 | arXiv 2501.05366 | reasoning-search loop, inference-time, agentic search |
+| Search-o1: Agentic Search-Enhanced Large Reasoning Models | [2501.05366](https://arxiv.org/abs/2501.05366) | [GitHub](https://github.com/RUC-NLPIR/Search-o1) | 2025 | arXiv 2501.05366 | reasoning-search loop, inference-time, agentic search |
 | SiriuS: Self-improving Multi-agent Systems via Bootstrapped Reasoning | [2502.04780](https://arxiv.org/abs/2502.04780) | [GitHub](https://github.com/zou-group/sirius) | 2025 | NeurIPS 2025 | self-improvement loop, reasoning library, multi-agent |
 | rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking | [2501.04519](https://arxiv.org/abs/2501.04519) | [GitHub](https://github.com/microsoft/rStar) | 2025 | ICML 25 (arXiv:2501.04519) | MCTS, process preference model, self-evolution, test-time search |
 
@@ -291,7 +291,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Evaluation and Benchmarking of LLM Agents: A Survey | [2507.21504](https://arxiv.org/abs/2507.21504) | [GitHub](https://github.com/Asaf-Yehudai/LLM-Agent-Evaluation-Survey) | 2025 | arXiv | evaluation taxonomy, survey, reliability, metrics |
 | tau^2-Bench: Evaluating Conversational Agents in a Dual-Control Environment | [2506.07982](https://arxiv.org/abs/2506.07982) | [GitHub](https://github.com/sierra-research/tau2-bench) | 2025 | arXiv | dual-control, Dec-POMDP, user coordination, compositional tasks |
 
-## 13. Reasoning Models & Test-Time Scaling for Agents (19)
+## 13. Reasoning Models & Test-Time Scaling for Agents (18)
 
 *Training the loop: reasoning models, test-time scaling, and multi-turn RL for agents.*
 
@@ -303,9 +303,8 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | OpenAI o1 System Card | [2412.16720](https://arxiv.org/abs/2412.16720) | / | 2024 | arXiv 2412.16720 (OpenAI technical report) | reasoning-model, chain-of-thought, RLHF, system-card |
 | Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters | [2408.03314](https://arxiv.org/abs/2408.03314) | / | 2024 | ICLR 2025 (arXiv 2408.03314) | test-time-compute, process-reward-model, inference-scaling, compute-optimal |
 | Training Language Models to Self-Correct via Reinforcement Learning (SCoRe) | [2409.12917](https://arxiv.org/abs/2409.12917) | / | 2024 | ICLR 2025 (arXiv 2409.12917) | self-correction, multi-turn-RL, intrinsic-correction, online-RL |
-| Watch Every Step! LLM Agent Learning via Iterative Step-Level Process Refinement (IPR) | [2406.11176](https://arxiv.org/abs/2406.11176) | [GitHub](https://github.com/WeiminXiong/IPR) | 2024 | EMNLP 2024 | step-level reward, process refinement, loop training |
+| Watch Every Step! LLM Agent Learning via Iterative Step-Level Process Refinement | [2406.11176](https://arxiv.org/abs/2406.11176) | [GitHub](https://github.com/WeiminXiong/IPR) | 2024 | EMNLP 2024 | step-level reward, process refinement, loop training |
 | WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning | [2411.02337](https://arxiv.org/abs/2411.02337) | [GitHub](https://github.com/THUDM/WebRL) | 2024 | ICLR 2025 | self-evolving loop, online curriculum, web agent RL |
-| A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning | [2504.16176](https://arxiv.org/abs/2504.16176) | / | 2025 | arXiv 2504.16176 (empirical study) | multi-turn RL, loop ablation, credit assignment |
 | Absolute Zero: Reinforced Self-play Reasoning with Zero Data | [2505.03335](https://arxiv.org/abs/2505.03335) | [GitHub](https://github.com/LeapLabTHU/Absolute-Zero-Reasoner) | 2025 | arXiv 2505.03335 | self-play, RLVR, zero-data, self-evolving-curriculum |
 | Agent-R: Training Language Model Agents to Reflect via Iterative Self-Training | [2501.11425](https://arxiv.org/abs/2501.11425) | [GitHub](https://github.com/ByteDance-Seed/Agent-R) | 2025 | arXiv 2501.11425 | iterative-self-training, reflection, on-the-fly-correction, agent-tuning |
 | Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning | [2511.16043](https://arxiv.org/abs/2511.16043) | [GitHub](https://github.com/aiming-lab/Agent0) | 2025 | arXiv 2511.16043 | self-evolution loop, zero-data, tool-integrated reasoning |
@@ -319,8 +318,6 @@ The agent loop is therefore a *component* of the harness — its core execution 
 
 ## Related Resources
 
-- [Awesome-World-Models](https://github.com/NeuraLiying/Awesome-World-Models) — sibling awesome-list for world-model research.
-
 - The two essays that set the industry's shared agent mental model: Anthropic [*Building Effective Agents*](https://www.anthropic.com/research/building-effective-agents) and OpenAI [*A Practical Guide to Building Agents*](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf).
 
 
@@ -329,9 +326,9 @@ The agent loop is therefore a *component* of the harness — its core execution 
 
 Every entry was multiply checked (2026-07-03):
 
-- **arXiv IDs**: all 111 papers with an ID passed a 3-layer check (arXiv → CrossRef → Semantic Scholar) via `verify_papers.py`.
+- **arXiv IDs**: all 110 papers with an ID passed a 3-layer check (arXiv → CrossRef → Semantic Scholar) via `verify_papers.py`.
 
-- **GitHub links**: all 96 repository URLs return HTTP 200, and a deep correspondence check confirmed 84/89 repos actually cite the paper (arXiv ID or title in the README). 16 GitHub links were extracted from the **PDF body** (not the arXiv abstract page); 28 have no public code (marked `/`, not a gap).
+- **GitHub links**: all 96 repository URLs return HTTP 200, and a deep correspondence check confirmed 84/89 repos actually cite the paper (arXiv ID or title in the README). 16 GitHub links were extracted from the **PDF body** (not the arXiv abstract page); 27 have no public code (marked `/`, not a gap).
 
 - **Corrections made this round**: the *Rise and Potential of LLM Agents* survey was mis-assigned to `OpenHands/OpenHands` → fixed to its real companion repo `WooooDyy/LLM-Agent-Paper-List`; ToolACE had no public code → set to `/`; 2 title drifts and the WebShop authorship corrected.
 
