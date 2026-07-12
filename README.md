@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 116 papers · 50 production harnesses / essays / talks · last updated 2026-07-03**
+**Total: 118 papers · 50 production harnesses / essays / talks · last updated 2026-07-13**
 
 ## What is an agent harness?
 
@@ -174,7 +174,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Reasoning | / | [GitHub](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard) | 2025 | ICML 25 | benchmark, AST evaluation, parallel/multi-turn calls, de facto standard |
 | ToolACE: Winning the Points of LLM Function Calling | [2409.00920](https://arxiv.org/abs/2409.00920) | / | 2025 | ICLR 25 | synthetic data generation, self-evolution, dual-layer verification, BFCL SOTA |
 
-## 6. The Agent Harness & Scaffold (13)
+## 6. The Agent Harness & Scaffold (15)
 
 *Papers where the harness itself — the agent-computer interface, scaffold, runtime, or context architecture — is the contribution. The conceptual core of this list.*
 
@@ -193,6 +193,8 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models (ACE) | [2510.04618](https://arxiv.org/abs/2510.04618) | [GitHub](https://github.com/ace-agent/ace) | 2025 | ICLR 2026 (arXiv preprint Oct 2025) | context engineering, evolving playbooks, system prompt, agent memory |
 | Meta-Harness: End-to-End Optimization of Model Harnesses | [2603.28052](https://arxiv.org/abs/2603.28052) | / | 2026 | arXiv (preprint, Stanford/MIT) | harness optimization, outer-loop search, agentic proposer, code optimization |
 | Natural-Language Agent Harnesses | [2603.25723](https://arxiv.org/abs/2603.25723) | / | 2026 | arXiv (preprint) | harness representation, natural language policy, harness ablation, runtime |
+| Harnessing LLM Agents with Skill Programs (HASP) | [2605.17734](https://arxiv.org/abs/2605.17734) | / | 2026 | arXiv | skill-programs, executable-guardrails, agent-loop-intervention, self-improvement |
+| From Agent Loops to Structured Graphs: A Scheduler-Theoretic Framework (SGH) | [2604.11378](https://arxiv.org/abs/2604.11378) | / | 2026 | arXiv position paper | scheduler-theoretic, structured-graph-harness, static-DAG, 70-system-survey |
 
 ## 7. Planning, Search & Self-Improvement Loops (10)
 
@@ -324,9 +326,9 @@ The agent loop is therefore a *component* of the harness — its core execution 
 ---
 ## Verification Methodology
 
-Every entry was multiply checked (2026-07-03):
+Every entry was multiply checked (last refreshed 2026-07-13):
 
-- **arXiv IDs**: all 110 papers with an ID passed a 3-layer check (arXiv → CrossRef → Semantic Scholar) via `verify_papers.py`.
+- **arXiv IDs**: all 112 papers with an ID passed a 3-layer check (arXiv → CrossRef → Semantic Scholar) via `verify_papers.py`; the two §6 additions (SGH 2604.11378, HASP 2605.17734) were each confirmed to resolve on the arXiv abstract page on 2026-07-13.
 
 - **GitHub links**: all 96 repository URLs return HTTP 200, and a deep correspondence check confirmed 84/89 repos actually cite the paper (arXiv ID or title in the README). 16 GitHub links were extracted from the **PDF body** (not the arXiv abstract page); 27 have no public code (marked `/`, not a gap).
 
