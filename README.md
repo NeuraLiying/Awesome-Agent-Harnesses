@@ -277,7 +277,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models | [2401.13919](https://arxiv.org/abs/2401.13919) | [GitHub](https://github.com/MinorJerry/WebVoyager) | 2024 | ACL 2024 | LMM web agent, end-to-end, real websites, rubric evaluation |
 | An Illusion of Progress? Assessing the Current State of Web Agents | [2504.01382](https://arxiv.org/abs/2504.01382) | [GitHub](https://github.com/OSU-NLP-Group/Online-Mind2Web) | 2025 | arXiv 2025 (Apr 2025) | online web benchmark, realistic evaluation, progress skepticism, Mind2Web successor |
 
-## 12. Benchmarks & Evaluation (9)
+## 12. Benchmarks & Evaluation (10)
 
 *Evaluation suites that stress-test agent harnesses.*
 
@@ -292,6 +292,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents | [2504.12516](https://arxiv.org/abs/2504.12516) | [GitHub](https://github.com/openai/simple-evals) | 2025 | arXiv (OpenAI) | browsing agent, hard-to-find information, short-answer verification, web search |
 | Evaluation and Benchmarking of LLM Agents: A Survey | [2507.21504](https://arxiv.org/abs/2507.21504) | [GitHub](https://github.com/Asaf-Yehudai/LLM-Agent-Evaluation-Survey) | 2025 | arXiv | evaluation taxonomy, survey, reliability, metrics |
 | tau^2-Bench: Evaluating Conversational Agents in a Dual-Control Environment | [2506.07982](https://arxiv.org/abs/2506.07982) | [GitHub](https://github.com/sierra-research/tau2-bench) | 2025 | arXiv | dual-control, Dec-POMDP, user coordination, compositional tasks |
+| ClawBench: Can AI Agents Complete Everyday Online Tasks? | [2604.08523](https://arxiv.org/abs/2604.08523) | [GitHub](https://github.com/TIGER-AI-Lab/ClawBench) | 2026 | arXiv | live-web, multi-harness, state-based scoring, trace capture |
 
 ## 13. Reasoning Models & Test-Time Scaling for Agents (18)
 
