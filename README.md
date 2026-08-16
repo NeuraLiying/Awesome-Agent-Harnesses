@@ -59,7 +59,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 
 ---
 
-## 1. Production Harnesses, SDKs & Frameworks (14)
+## 1. Production Harnesses, SDKs & Frameworks (15)
 
 *These shipped products ARE agent harnesses — the artifact the rest of this list studies. Ordered by year.*
 
@@ -79,6 +79,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | openai/codex — Lightweight coding agent that runs in your terminal | [repo](https://github.com/openai/codex) | 2025 | OpenAI | Codex CLI, OpenAI's terminal-based coding agent: runs locally, integrates with VS Code/Cursor, and exposes the agent loo |
 | openai/openai-agents-python (GitHub repository) | [repo](https://github.com/openai/openai-agents-python) | 2025 | OpenAI | Source repository for the OpenAI Agents SDK: a lightweight, multi-provider framework for building agentic workflows in P |
 | wanshuiyin/Auto-claude-code-research-in-sleep | [repo](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 2025 | wanshuiyin | ARIS (Auto-Research-In-Sleep) — lightweight Markdown-only skill suite turning Claude Code into an autonomous ML-research |
+| vostride/agent-qa | [repo](https://github.com/vostride/agent-qa) | 2026 | Vostride | Agent QA — TypeScript QA harness with natural-language web/mobile tests, persistent test memory, selector self-healing, failure evidence, and MCP access. |
 
 ## 2. Influential Essays, Blogs & Talks (36)
 
