@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 118 papers · 50 production harnesses / essays / talks · last updated 2026-07-13**
+**Total: 119 papers · 50 production harnesses / essays / talks · last updated 2026-09-09**
 
 ## What is an agent harness?
 
@@ -174,7 +174,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Reasoning | / | [GitHub](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard) | 2025 | ICML 25 | benchmark, AST evaluation, parallel/multi-turn calls, de facto standard |
 | ToolACE: Winning the Points of LLM Function Calling | [2409.00920](https://arxiv.org/abs/2409.00920) | / | 2025 | ICLR 25 | synthetic data generation, self-evolution, dual-layer verification, BFCL SOTA |
 
-## 6. The Agent Harness & Scaffold (15)
+## 6. The Agent Harness & Scaffold (16)
 
 *Papers where the harness itself — the agent-computer interface, scaffold, runtime, or context architecture — is the contribution. The conceptual core of this list.*
 
@@ -195,6 +195,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Natural-Language Agent Harnesses | [2603.25723](https://arxiv.org/abs/2603.25723) | / | 2026 | arXiv (preprint) | harness representation, natural language policy, harness ablation, runtime |
 | Harnessing LLM Agents with Skill Programs (HASP) | [2605.17734](https://arxiv.org/abs/2605.17734) | / | 2026 | arXiv | skill-programs, executable-guardrails, agent-loop-intervention, self-improvement |
 | From Agent Loops to Structured Graphs: A Scheduler-Theoretic Framework (SGH) | [2604.11378](https://arxiv.org/abs/2604.11378) | / | 2026 | arXiv position paper | scheduler-theoretic, structured-graph-harness, static-DAG, 70-system-survey |
+| Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report | [2608.15763](https://arxiv.org/abs/2608.15763) | / | 2026 | arXiv | harness-aware training, harness overfitting, runtime adaptation, agent RL |
 
 ## 7. Planning, Search & Self-Improvement Loops (10)
 
@@ -340,6 +341,8 @@ Every entry was multiply checked (last refreshed 2026-07-13):
 
 If a link has rotted since, please open an issue/PR.
 
+
+Addition checked on 2026-09-09: the title and identifier for 2608.15763 were checked against its arXiv record. Its GitHub column is marked `/` because training/evaluation code has not been released.
 
 ## Contributing
 
