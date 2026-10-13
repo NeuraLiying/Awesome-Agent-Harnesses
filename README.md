@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 207 papers · 66 production harnesses / essays / talks · last updated 2026-10-06**
+**Total: 208 papers · 67 production harnesses / essays / talks · last updated 2026-10-14**
 
 ## What is an agent harness?
 
@@ -59,7 +59,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 
 ---
 
-## 1. Production Harnesses, SDKs & Frameworks (23)
+## 1. Production Harnesses, SDKs & Frameworks (24)
 
 *These shipped products ARE agent harnesses — the artifact the rest of this list studies. Ordered by year.*
 
@@ -80,6 +80,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | openai/openai-agents-python (GitHub repository) | [repo](https://github.com/openai/openai-agents-python) | 2025 | OpenAI | Source repository for the OpenAI Agents SDK: a lightweight, multi-provider framework for building agentic workflows in P |
 | wanshuiyin/Auto-claude-code-research-in-sleep | [repo](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 2025 | wanshuiyin | ARIS (Auto-Research-In-Sleep) — lightweight Markdown-only skill suite turning Claude Code into an autonomous ML-research |
 | sandbaseai/sandbase-harness | [repo](https://github.com/sandbaseai/sandbase-harness) | 2026 | SandBase | Local-first agent runtime with sandboxed sessions, MCP tools, memory, credentials, audit, and replay. |
+| Agent QA — TypeScript QA harness for web and mobile | [repo](https://github.com/vostride/agent-qa) | 2026 | Vostride | TypeScript QA harness with natural-language web/mobile tests, persistent test memory, selector self-healing, failure evidence, and MCP access. Source-available (FSL-1.1-ALv2). ~903 stars. |
 | AxisAgentic — extensible runtime & trajectory-collection framework for long-horizon agents | [repo](https://github.com/XYZ-AI-Lab/AxisAgentic) | 2026 | XYZ AI Lab (xyz-lab.ai) | Extensible runtime for long-horizon agents that executes multi-turn tool orchestration with context budgeting/. ~1120 stars.
 | dots — OpenAI's always-on personal agent (cloud workspaces, proactive research loop) | [site](https://openai.com/index/introducing-dots/) | 2026 | OpenAI | OpenAI's launch of Dots (Dev Day, 2026-09-29): always-on personal agents where each dot runs continuously in its own protected cloud workspace.
 | FrontierAgent — Apodex agent runtime, TUI & evaluation suite | [repo](https://github.com/ApodexAI/FrontierAgent) | 2026 | ApodexAI (Apodex AI, apodex.ai) | Open-source agent runtime, terminal TUI, and evaluation suite released alongside Apodex 1.1: a stateful ReAct. ~5127 stars.
@@ -357,7 +358,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation | [2607.06118](https://arxiv.org/abs/2607.06118) | [GitHub](https://github.com/Mininglamp-AI/WebRetriever) | 2026 | arXiv (preprint) | web-agent benchmark, evaluation harness, LLM-as-judge, browser agent |
 | Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents | [2608.17319](https://arxiv.org/abs/2608.17319) | / | 2026 | arXiv (preprint) | browser agent, agent-computer interface, harness-aware training, web benchmark |
 
-## 12. Benchmarks & Evaluation (19)
+## 12. Benchmarks & Evaluation (20)
 
 *Evaluation suites that stress-test agent harnesses.*
 
@@ -372,6 +373,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents | [2504.12516](https://arxiv.org/abs/2504.12516) | [GitHub](https://github.com/openai/simple-evals) | 2025 | arXiv (OpenAI) | browsing agent, hard-to-find information, short-answer verification, web search |
 | Evaluation and Benchmarking of LLM Agents: A Survey | [2507.21504](https://arxiv.org/abs/2507.21504) | [GitHub](https://github.com/Asaf-Yehudai/LLM-Agent-Evaluation-Survey) | 2025 | arXiv | evaluation taxonomy, survey, reliability, metrics |
 | tau^2-Bench: Evaluating Conversational Agents in a Dual-Control Environment | [2506.07982](https://arxiv.org/abs/2506.07982) | [GitHub](https://github.com/sierra-research/tau2-bench) | 2025 | arXiv | dual-control, Dec-POMDP, user coordination, compositional tasks |
+| ClawBench: Can AI Agents Complete Everyday Online Tasks? | [2604.08523](https://arxiv.org/abs/2604.08523) | [GitHub](https://github.com/TIGER-AI-Lab/ClawBench) | 2026 | arXiv (preprint) | live-web, multi-harness, state-based scoring, trace capture |
 | Evo-Bench: Can Language Models Improve Agent Harness? | [2608.09096](https://arxiv.org/abs/2608.09096) | [GitHub](https://github.com/RUCAIBox/Evo-Bench) | 2026 | arXiv (preprint) | benchmark, agent harness, harness improvement, LLM agents |
 | EvoHarnessBench: Can Your Agents Keep Pace with an Evolving Harness? | [2609.04280](https://arxiv.org/abs/2609.04280) | / | 2026 | arXiv (preprint) | benchmark, harness evolution, harness-induced forgetting, agent retention/adaptation |
 | Grounded Checklist Partial Credit for Agent Skill Trajectories | [2608.27487](https://arxiv.org/abs/2608.27487) | / | 2026 | arXiv (preprint) | agent evaluation, partial-credit scoring, agent skills (SKILL.md), SkillsBench |
