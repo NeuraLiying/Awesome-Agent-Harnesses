@@ -140,7 +140,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | The new rules of context engineering for Claude 5 generation models | Anthropic | blog | 2026 | [link](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models) |
 | Why Software Factories Fail (or: harness engineering is not enough) | HumanLayer (Dex Horthy) | essay | 2026 | [link](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md) |
 
-## 3. Surveys & Position Papers (12)
+## 3. Surveys & Position Papers (13)
 
 *Authoritative surveys and position papers on LLM agents.*
 
@@ -155,6 +155,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review | [2504.19678](https://arxiv.org/abs/2504.19678) | / | 2025 | arXiv:2504.19678 | reasoning, autonomous agents, benchmarks |
 | Survey on Evaluation of LLM-based Agents | [2503.16416](https://arxiv.org/abs/2503.16416) | / | 2025 | ACL Findings 2025; arXiv:2503.16416 | evaluation survey, benchmarks, web/SWE agents |
 | Code as Agent Harness | [2605.18747](https://arxiv.org/abs/2605.18747) | [GitHub](https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers) | 2026 | arXiv (preprint; HF #1 Paper of the Day) | survey, code-as-harness, harness taxonomy, multi-agent harness |
+| Harness Engineering for Language Agents: The Harness Layer as Control, Agency, and Runtime | / | / | 2026 | Preprints.org (preprint; [10.20944/preprints202603.1756.v2](https://doi.org/10.20944/preprints202603.1756.v2)) | position paper, harness layer, control-agency-runtime, harness taxonomy, reporting checklist |
 | Model or Harness? An Interaction-Centric Taxonomy for Localizing Agent Failures | [2607.28802](https://arxiv.org/abs/2607.28802) | / | 2026 | arXiv (preprint) | failure taxonomy, model-vs-harness attribution, agent evaluation, diagnosis |
 | Multi-Agent Debate Strategies: Survey, Taxonomy, and Challenges | [2607.26212](https://arxiv.org/abs/2607.26212) | [GitHub](https://github.com/nlp4se/MAD-rep-package) | 2026 | arXiv (preprint) | multi-agent debate, survey, taxonomy, multi-agent harness |
 | The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents | / | [GitHub](https://github.com/js-lee-AI/awesome-agent-loop-papers) | 2026 | SSRN preprint (2026-07) | survey, agent loop, harness, control strategies |
