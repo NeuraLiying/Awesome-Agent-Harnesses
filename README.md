@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 209 papers · 67 production harnesses / essays / talks · last updated 2026-10-26**
+**Total: 210 papers · 67 production harnesses / essays / talks · last updated 2026-10-26**
 
 ## What is an agent harness?
 
@@ -178,7 +178,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Tool Learning with Foundation Models | [2304.08354](https://arxiv.org/abs/2304.08354) | / | 2023 | ACM Computing Surveys 57(4):1-40, 2024 (DOI 10.1145/3704435); arXiv:2304.08354 | tool use, tool-learning survey, foundation models |
 | Tree of Thoughts: Deliberate Problem Solving with Large Language Models | [2305.10601](https://arxiv.org/abs/2305.10601) | [GitHub](https://github.com/princeton-nlp/tree-of-thought-llm) | 2023 | NeurIPS 2023 | tree search, self-evaluation, deliberation |
 
-## 5. Tool Use & Function Calling (18)
+## 5. Tool Use & Function Calling (19)
 
 *How a harness connects the model to external tools, APIs, and function calls.*
 
@@ -200,6 +200,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Scalable LLM Agent Tool Access in the Cloud | [2607.15593](https://arxiv.org/abs/2607.15593) | / | 2026 | arXiv (preprint) | MCP, agent-server architecture, tool-access gateway, production deployment |
 | SkillSeek: Revisiting Agent Skill Retrieval at Marketplace Scale | [2609.38822](https://arxiv.org/abs/2609.38822) | [GitHub](https://github.com/guanqun-yang/SkillSeek) | 2026 | AACL-IJCNLP 2026 | skill retrieval, agent-computer interface, MCP, harness evaluation |
 | Speculate While You Reason: Teaching Agents to Predict Their Next Tool Call via Joint Agent-Speculator RL | [2607.25816](https://arxiv.org/abs/2607.25816) | / | 2026 | arXiv (preprint) | tool-call speculation, harness-aware training, latency hiding, agentic RL |
+| TabAgent: Distilling LLM Agent Components into Cheap Classifiers | [2602.16429](https://arxiv.org/abs/2602.16429) | [GitHub](https://github.com/dolev31/TabAgent) | 2026 | arXiv (preprint) | tool shortlisting, classifier distillation, closed-set decisions, cost reduction |
 | The Bitter Lesson of Tool Calling | [2608.06370](https://arxiv.org/abs/2608.06370) | / | 2026 | arXiv (preprint) | tool-calling interface, agent-computer interface, empirical study, BFCL v4 |
 | ToolSearcher: Optimizing Tool Selection at Scale via Reinforcement Learning | [2609.30906](https://arxiv.org/abs/2609.30906) | [GitHub](https://github.com/zhenlongDai/ToolSearcher) | 2026 | NeurIPS 2026 | tool selection, agentic RL, search loop, harness-aware training |
 
