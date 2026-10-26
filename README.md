@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 209 papers · 67 production harnesses / essays / talks · last updated 2026-10-26**
+**Total: 211 papers · 67 production harnesses / essays / talks · last updated 2026-10-26**
 
 ## What is an agent harness?
 
@@ -203,7 +203,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | The Bitter Lesson of Tool Calling | [2608.06370](https://arxiv.org/abs/2608.06370) | / | 2026 | arXiv (preprint) | tool-calling interface, agent-computer interface, empirical study, BFCL v4 |
 | ToolSearcher: Optimizing Tool Selection at Scale via Reinforcement Learning | [2609.30906](https://arxiv.org/abs/2609.30906) | [GitHub](https://github.com/zhenlongDai/ToolSearcher) | 2026 | NeurIPS 2026 | tool selection, agentic RL, search loop, harness-aware training |
 
-## 6. The Agent Harness & Scaffold (32)
+## 6. The Agent Harness & Scaffold (33)
 
 *Papers where the harness itself — the agent-computer interface, scaffold, runtime, or context architecture — is the contribution. The conceptual core of this list.*
 
@@ -225,6 +225,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Harnessing LLM Agents with Skill Programs (HASP) | [2605.17734](https://arxiv.org/abs/2605.17734) | / | 2026 | arXiv | skill-programs, executable-guardrails, agent-loop-intervention, self-improvement |
 | From Agent Loops to Structured Graphs: A Scheduler-Theoretic Framework (SGH) | [2604.11378](https://arxiv.org/abs/2604.11378) | / | 2026 | arXiv position paper | scheduler-theoretic, structured-graph-harness, static-DAG, 70-system-survey |
 | Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report | [2608.15763](https://arxiv.org/abs/2608.15763) | / | 2026 | arXiv | harness-aware training, harness overfitting, runtime adaptation, agent RL |
+| Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy | [2606.24177](https://arxiv.org/abs/2606.24177) | [GitHub](https://github.com/AutoResearch-Factory/Agon) | 2026 | arXiv (preprint) | prompt economy, minimal prompt footprint, research harness, long-running autonomy |
 | Can Agent Harnesses and Inference Engines Hear Each Other? The HEAR Protocol for Agentic LLM Serving | [2610.06597](https://arxiv.org/abs/2610.06597) | / | 2026 | arXiv (preprint) | harness-engine interface, agentic LLM serving, KV-cache coordination, serving protocol |
 | Causal Improvement Graph for Agentic Harness Optimization | [2610.05039](https://arxiv.org/abs/2610.05039) | / | 2026 | arXiv (preprint) | harness optimization, meta-harness, agentic runtime, graph-governed search loop |
 | DREvo: Distilling Recalibrated Historical Experience for Harness Self-Evolution | [2607.26722](https://arxiv.org/abs/2607.26722) | / | 2026 | arXiv (preprint) | harness self-evolution, experience recalibration, scaffold search, LLM agents |
@@ -359,7 +360,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation | [2607.06118](https://arxiv.org/abs/2607.06118) | [GitHub](https://github.com/Mininglamp-AI/WebRetriever) | 2026 | arXiv (preprint) | web-agent benchmark, evaluation harness, LLM-as-judge, browser agent |
 | Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents | [2608.17319](https://arxiv.org/abs/2608.17319) | / | 2026 | arXiv (preprint) | browser agent, agent-computer interface, harness-aware training, web benchmark |
 
-## 12. Benchmarks & Evaluation (20)
+## 12. Benchmarks & Evaluation (21)
 
 *Evaluation suites that stress-test agent harnesses.*
 
@@ -381,6 +382,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | HarnessOpt-Bench: Evaluating LLMs at Harness Optimization | [2608.06301](https://arxiv.org/abs/2608.06301) | / | 2026 | arXiv (preprint) | benchmark, harness-optimization, trusted-execution, agent-evaluation |
 | HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses | [2608.06984](https://arxiv.org/abs/2608.06984) | / | 2026 | arXiv (preprint) | safety benchmark, harness evaluation, persistent carriers, cross-harness containment |
 | Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading | [2607.08964](https://arxiv.org/abs/2607.08964) | [GitHub](https://github.com/zli12321/LHTB) | 2026 | arXiv (preprint) | benchmark, long-horizon agents, terminal agents, dense reward grading |
+| PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting | [2606.08878](https://arxiv.org/abs/2606.08878) | [GitHub](https://github.com/WhymustIhaveaname/PerspectiveGap) | 2026 | arXiv (preprint) | benchmark, orchestration prompts, sub-agent context, multi-agent harness |
 | Rethinking the Evaluation of Harness Evolution for Agents | [2607.12227](https://arxiv.org/abs/2607.12227) | [GitHub](https://github.com/rethinking-harness-evolution/code) | 2026 | arXiv (preprint) | harness evolution, evaluation methodology, test-time scaling, benchmark study |
 | SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration? | [2608.23564](https://arxiv.org/abs/2608.23564) | [GitHub](https://github.com/Einsia/SWE-Refactor-Bench) | 2026 | arXiv (preprint) | SWE benchmark, long-horizon whole-repo migration, agentic multi-agent verification, reward hacking |
 | SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? | [2608.19799](https://arxiv.org/abs/2608.19799) | [GitHub](https://github.com/OpenMOSS/SWE-bench-Science) | 2026 | arXiv (preprint) | SWE-bench-family benchmark, coding agents, scientific software engineering, failure analysis |
