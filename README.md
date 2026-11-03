@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 212 papers · 68 production harnesses / essays / talks · last updated 2026-10-26**
+**Total: 212 papers · 69 production harnesses / essays / talks · last updated 2026-10-26**
 
 ## What is an agent harness?
 
@@ -59,7 +59,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 
 ---
 
-## 1. Production Harnesses, SDKs & Frameworks (25)
+## 1. Production Harnesses, SDKs & Frameworks (26)
 
 *These shipped products ARE agent harnesses — the artifact the rest of this list studies. Ordered by year.*
 
@@ -88,6 +88,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Graft — open-source context layer for coding agents | [repo](https://github.com/trailhq/Graft) | 2026 | Trail (trailhq; ex-NanoNets) | Open-source context layer for coding agents: builds a per-repo knowledge graph (tree-sitter symbol graph + LLM. ~9615 stars.
 | grok-build — xAI's terminal coding agent harness & TUI | [repo](https://github.com/xai-org/grok-build) | 2026 | xAI | xAI/SpaceXAI's production terminal coding-agent harness: fullscreen mouse-interactive Rust TUI with a dedicate. ~27231 stars.
 | Orkas | [repo](https://github.com/Orkas-AI/Orkas) | 2026 | Orkas-AI | Open-source, local-first desktop AI team; Commander coordinates specialists, tools, project context, memory and skills for code and other deliverables. Supports configured providers and local coding agents; managed models are available in the packaged app. MIT license, ~9k stars.
+| Ponder | [repo](https://github.com/Quinnod345/ponder) | 2026 | Quinn O'Donnell (Quinnod345) | Open-source, zero-dependency Node.js CLI and Agent Skill that enforces a 7-step multi-role deliberation state machine (`skeptic`, `builder`, `dreamer`, `empath`), a `1.00` unit-coverage gate, convergence thresholds (`novelty < 0.05`, `churn < 0.10`), and an append-only JSONL review ledger (`.ponder/<slug>/ledger.jsonl`) for coding-agent harnesses. MIT license. |
 | qm — multiplayer agent harness for work (Slack + web) | [repo](https://github.com/yc-software/qm) | 2026 | Y Combinator (yc-software) | Open-source multiplayer agent harness for organizations: a headless core runs pluggable agent loops (Pi, OpenC. ~15348 stars.
 | ZCode — Z.ai's coding agent harness (desktop, web & terminal) | [repo](https://github.com/zai-org/ZCode) | 2026 | Z.ai (Zhipu AI) — official org "zai-org" (verified via GitHub API: hosts ChatGLM, GLM-4/5, AutoGLM, CogVideoX, CodeGeeX) | Open-source monorepo of Z.ai's production coding agent harness: Electron desktop, web, and terminal (TUI/CLI). ~7453 stars.
 
