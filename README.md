@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 212 papers · 68 production harnesses / essays / talks · last updated 2026-10-26**
+**Total: 213 papers · 68 production harnesses / essays / talks · last updated 2026-10-26**
 
 ## What is an agent harness?
 
@@ -362,7 +362,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation | [2607.06118](https://arxiv.org/abs/2607.06118) | [GitHub](https://github.com/Mininglamp-AI/WebRetriever) | 2026 | arXiv (preprint) | web-agent benchmark, evaluation harness, LLM-as-judge, browser agent |
 | Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents | [2608.17319](https://arxiv.org/abs/2608.17319) | / | 2026 | arXiv (preprint) | browser agent, agent-computer interface, harness-aware training, web benchmark |
 
-## 12. Benchmarks & Evaluation (21)
+## 12. Benchmarks & Evaluation (22)
 
 *Evaluation suites that stress-test agent harnesses.*
 
@@ -378,6 +378,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Evaluation and Benchmarking of LLM Agents: A Survey | [2507.21504](https://arxiv.org/abs/2507.21504) | [GitHub](https://github.com/Asaf-Yehudai/LLM-Agent-Evaluation-Survey) | 2025 | arXiv | evaluation taxonomy, survey, reliability, metrics |
 | tau^2-Bench: Evaluating Conversational Agents in a Dual-Control Environment | [2506.07982](https://arxiv.org/abs/2506.07982) | [GitHub](https://github.com/sierra-research/tau2-bench) | 2025 | arXiv | dual-control, Dec-POMDP, user coordination, compositional tasks |
 | ClawBench: Can AI Agents Complete Everyday Online Tasks? | [2604.08523](https://arxiv.org/abs/2604.08523) | [GitHub](https://github.com/TIGER-AI-Lab/ClawBench) | 2026 | arXiv (preprint) | live-web, multi-harness, state-based scoring, trace capture |
+| Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution | [2610.17816](https://arxiv.org/abs/2610.17816) | [GitHub](https://github.com/OpenBMB/EC2-Bench) | 2026 | arXiv (preprint) | EC²-Bench (EC2-Bench), edge-cloud collaboration, cloud cost, privacy exposure |
 | Evo-Bench: Can Language Models Improve Agent Harness? | [2608.09096](https://arxiv.org/abs/2608.09096) | [GitHub](https://github.com/RUCAIBox/Evo-Bench) | 2026 | arXiv (preprint) | benchmark, agent harness, harness improvement, LLM agents |
 | EvoHarnessBench: Can Your Agents Keep Pace with an Evolving Harness? | [2609.04280](https://arxiv.org/abs/2609.04280) | / | 2026 | arXiv (preprint) | benchmark, harness evolution, harness-induced forgetting, agent retention/adaptation |
 | Grounded Checklist Partial Credit for Agent Skill Trajectories | [2608.27487](https://arxiv.org/abs/2608.27487) | / | 2026 | arXiv (preprint) | agent evaluation, partial-credit scoring, agent skills (SKILL.md), SkillsBench |
