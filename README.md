@@ -2,7 +2,7 @@
 
 A curated, multiply-verified survey of **agent harness** research and engineering — the right level of abstraction for understanding the current frontier of LLM agents.
 
-**Total: 213 papers · 68 production harnesses / essays / talks · last updated 2026-10-26**
+**Total: 229 papers · 69 production harnesses / essays / talks · last updated 2026-11-28**
 
 ## What is an agent harness?
 
@@ -29,32 +29,34 @@ The agent loop is therefore a *component* of the harness — its core execution 
 
 | Harness component | Where |
 |---|---|
-| Production harnesses — Claude Code, Codex, Cursor, … *are* harnesses | [§1](#1-production-harnesses-sdks--frameworks) |
-| Influential essays, blogs & talks | [§2](#2-influential-essays-blogs--talks) |
-| The agent loop (core execution + control flow) | [§4](#4-foundations-of-the-agent-loop-20222023) · [§7](#7-planning-search-self-improvement-loops) |
-| Tools & function calling | [§5](#5-tool-use--function-calling) |
-| The harness as a research object (scaffold, runtime, agent-computer interface) | [§6](#6-the-agent-harness--scaffold) |
-| Memory & context management | [§8](#8-memory-augmented-agents) |
-| Multi-agent orchestration | [§9](#9-multi-agent-systems) |
-| Domain harnesses (code/SWE, web/GUI) | [§10](#10-code--swe-agents) · [§11](#11-web-gui--computer-use-agents) |
-| Evaluation & stress-testing | [§12](#12-benchmarks--evaluation) |
-| Training the loop (reasoning models, test-time scaling, agent RL) | [§13](#13-reasoning-models--test-time-scaling-for-agents) |
+| Production harnesses — Claude Code, Codex, Cursor, … *are* harnesses | [§1](#1-production-harnesses-sdks--frameworks-25) |
+| Influential essays, blogs & talks | [§2](#2-influential-essays-blogs--talks-44) |
+| The agent loop (core execution + control flow) | [§4](#4-foundations-of-the-agent-loop-20222023-11) · [§7](#7-planning-search--self-improvement-loops-10) |
+| Tools & function calling | [§5](#5-tool-use--function-calling-19) |
+| The harness as a research object (scaffold, runtime, agent-computer interface) | [§6](#6-the-agent-harness--scaffold-33) |
+| Recursive self-improvement (agent, harness, or target system) | [§8](#8-harness-for-rsi) |
+| Memory & context management | [§9](#9-memory-augmented-agents-19) |
+| Multi-agent orchestration | [§10](#10-multi-agent-systems-15) |
+| Domain harnesses (code/SWE, web/GUI) | [§11](#11-code--swe-agents-15) · [§12](#12-web-gui--computer-use-agents-23) |
+| Evaluation & stress-testing | [§13](#13-benchmarks--evaluation-23) |
+| Training the loop (reasoning models, test-time scaling, agent RL) | [§14](#14-reasoning-models--test-time-scaling-for-agents-33) |
 
 ## Table of Contents
 
-- [1. Production Harnesses, SDKs & Frameworks](#1-production-harnesses-sdks--frameworks)
-- [2. Influential Essays, Blogs & Talks](#2-influential-essays-blogs--talks)
-- [3. Surveys & Position Papers](#3-surveys-position-papers)
-- [4. Foundations of the Agent Loop (2022–2023)](#4-foundations-of-the-agent-loop-20222023)
-- [5. Tool Use & Function Calling](#5-tool-use-function-calling)
-- [6. The Agent Harness & Scaffold](#6-the-agent-harness-scaffold)
-- [7. Planning, Search & Self-Improvement Loops](#7-planning-search-self-improvement-loops)
-- [8. Memory-Augmented Agents](#8-memory-augmented-agents)
-- [9. Multi-Agent Systems](#9-multi-agent-systems)
-- [10. Code & SWE Agents](#10-code-swe-agents)
-- [11. Web, GUI & Computer-Use Agents](#11-web-gui-computer-use-agents)
-- [12. Benchmarks & Evaluation](#12-benchmarks-evaluation)
-- [13. Reasoning Models & Test-Time Scaling for Agents](#13-reasoning-models-test-time-scaling-for-agents)
+- [1. Production Harnesses, SDKs & Frameworks](#1-production-harnesses-sdks--frameworks-25)
+- [2. Influential Essays, Blogs & Talks](#2-influential-essays-blogs--talks-44)
+- [3. Surveys & Position Papers](#3-surveys--position-papers-13)
+- [4. Foundations of the Agent Loop (2022–2023)](#4-foundations-of-the-agent-loop-20222023-11)
+- [5. Tool Use & Function Calling](#5-tool-use--function-calling-19)
+- [6. The Agent Harness & Scaffold](#6-the-agent-harness--scaffold-33)
+- [7. Planning, Search & Self-Improvement Loops](#7-planning-search--self-improvement-loops-10)
+- [8. Harness for RSI](#8-harness-for-rsi)
+- [9. Memory-Augmented Agents](#9-memory-augmented-agents-19)
+- [10. Multi-Agent Systems](#10-multi-agent-systems-15)
+- [11. Code & SWE Agents](#11-code--swe-agents-15)
+- [12. Web, GUI & Computer-Use Agents](#12-web-gui--computer-use-agents-23)
+- [13. Benchmarks & Evaluation](#13-benchmarks--evaluation-23)
+- [14. Reasoning Models & Test-Time Scaling for Agents](#14-reasoning-models--test-time-scaling-for-agents-33)
 - [Related Resources](#related-resources)
 
 ---
@@ -91,7 +93,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | qm — multiplayer agent harness for work (Slack + web) | [repo](https://github.com/yc-software/qm) | 2026 | Y Combinator (yc-software) | Open-source multiplayer agent harness for organizations: a headless core runs pluggable agent loops (Pi, OpenC. ~15348 stars.
 | ZCode — Z.ai's coding agent harness (desktop, web & terminal) | [repo](https://github.com/zai-org/ZCode) | 2026 | Z.ai (Zhipu AI) — official org "zai-org" (verified via GitHub API: hosts ChatGLM, GLM-4/5, AutoGLM, CogVideoX, CodeGeeX) | Open-source monorepo of Z.ai's production coding agent harness: Electron desktop, web, and terminal (TUI/CLI). ~7453 stars.
 
-## 2. Influential Essays, Blogs & Talks (43)
+## 2. Influential Essays, Blogs & Talks (44)
 
 *High-impact, often more influential than an average paper. Long-form only.*
 
@@ -138,6 +140,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Claude Code's Next Era — Thariq Shihipar, Anthropic | Anthropic (Thariq Shihipar, Claude Code) on Latent Space (swyx) | podcast | 2026 | [link](https://www.latent.space/p/thariq) |
 | Harness Engineering for Self-Improvement | Lilian Weng (Lil'Log; ex-OpenAI) | blog | 2026 | [link](https://lilianweng.github.io/posts/2026-07-04-harness) |
 | HarnessTax: How Much Does the Harness Matter for Coding Agents? | UC Berkeley (Sky Computing Lab) + Arena Intelligence Inc. (LMArena) | study | 2026 | [link](https://harnesstax.github.io) |
+| KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure | Engineering at Meta | blog | 2026 | [link](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/) |
 | The new rules of context engineering for Claude 5 generation models | Anthropic | blog | 2026 | [link](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models) |
 | Why Software Factories Fail (or: harness engineering is not enough) | HumanLayer (Dex Horthy) | essay | 2026 | [link](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md) |
 
@@ -163,7 +166,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 
 ## 4. Foundations of the Agent Loop (2022–2023) (11)
 
-*The 2022–2023 papers that established the reasoning+acting loop as a recognisable pattern. This is the foundational era — recent (2024–2026) work on searching and training the loop lives in [§7](#7-planning-search-self-improvement-loops) and [§13](#13-reasoning-models-test-time-scaling-for-agents).*
+*The 2022–2023 papers that established the reasoning+acting loop as a recognisable pattern. This is the foundational era — recent (2024–2026) work on searching and training the loop lives in [§7](#7-planning-search--self-improvement-loops-10) and [§14](#14-reasoning-models--test-time-scaling-for-agents-33).*
 
 | Title | arXiv | GitHub | Year | Venue | Keywords |
 |-------|-------|--------|------|-------|----------|
@@ -221,8 +224,8 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | An Open Platform for AI Software Developers as Generalist Agents (OpenHands / fka OpenDevin) | [2407.16741](https://arxiv.org/abs/2407.16741) | [GitHub](https://github.com/OpenHands/OpenHands) | 2024 | arXiv (OpenReview) | open-platform, generalist-agent, code-web-browser, harness-platform |
 | Perspectives and Designs Towards a Runtime for Autonomous LLM-Powered Applications (GoEX) | [2404.06921](https://arxiv.org/abs/2404.06921) | [GitHub](https://github.com/ShishirPatil/gorilla) | 2024 | arXiv (UC Berkeley / a16z) | agent runtime, execution engine, safety, permissioned actions |
 | SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering | [2405.15793](https://arxiv.org/abs/2405.15793) | [GitHub](https://github.com/swe-agent/swe-agent) | 2024 | NeurIPS 24 | agent-computer-interface, software-engineering, scaffold, SWE-bench |
-| Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models (ACE) | [2510.04618](https://arxiv.org/abs/2510.04618) | [GitHub](https://github.com/ace-agent/ace) | 2025 | ICLR 2026 (arXiv preprint Oct 2025) | context engineering, evolving playbooks, system prompt, agent memory |
-| Meta-Harness: End-to-End Optimization of Model Harnesses | [2603.28052](https://arxiv.org/abs/2603.28052) | / | 2026 | arXiv (preprint, Stanford/MIT) | harness optimization, outer-loop search, agentic proposer, code optimization |
+| Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models | [2510.04618](https://arxiv.org/abs/2510.04618) | [GitHub](https://github.com/ace-agent/ace) | 2025 | ICLR 2026 (arXiv preprint Oct 2025) | ACE, context engineering, evolving playbooks, system prompt, agent memory |
+| Meta-Harness: End-to-End Optimization of Model Harnesses | [2603.28052](https://arxiv.org/abs/2603.28052) | [GitHub](https://github.com/stanford-iris-lab/meta-harness) | 2026 | arXiv (preprint, Stanford/MIT) | harness optimization, outer-loop search, agentic proposer, code optimization |
 | Natural-Language Agent Harnesses | [2603.25723](https://arxiv.org/abs/2603.25723) | / | 2026 | arXiv (preprint) | harness representation, natural language policy, harness ablation, runtime |
 | Harnessing LLM Agents with Skill Programs (HASP) | [2605.17734](https://arxiv.org/abs/2605.17734) | / | 2026 | arXiv | skill-programs, executable-guardrails, agent-loop-intervention, self-improvement |
 | From Agent Loops to Structured Graphs: A Scheduler-Theoretic Framework (SGH) | [2604.11378](https://arxiv.org/abs/2604.11378) | / | 2026 | arXiv position paper | scheduler-theoretic, structured-graph-harness, static-DAG, 70-system-survey |
@@ -262,7 +265,88 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | SiriuS: Self-improving Multi-agent Systems via Bootstrapped Reasoning | [2502.04780](https://arxiv.org/abs/2502.04780) | [GitHub](https://github.com/zou-group/sirius) | 2025 | NeurIPS 2025 | self-improvement loop, reasoning library, multi-agent |
 | rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking | [2501.04519](https://arxiv.org/abs/2501.04519) | [GitHub](https://github.com/microsoft/rStar) | 2025 | ICML 25 (arXiv:2501.04519) | MCTS, process preference model, self-evolution, test-time search |
 
-## 8. Memory-Augmented Agents (19)
+## 8. Harness for RSI
+
+*Recursive self-improvement as a first-class harness problem. Entries below are grouped the way this list already classifies documents: **papers**, **posts** (essays / blogs / talks), **tech reports**, **production / vendor documentation**, and **benchmarks**. Distinct from [§7](#7-planning-search--self-improvement-loops-10), which covers planning, search, and self-reflection over task trajectories. Complementary to [§6](#6-the-agent-harness--scaffold-33), which already lists many 2026 papers on evolving the harness itself — those rows are cross-listed here rather than removed.*
+
+Three lineages appear in the papers: (1) self-improving coding / agent systems that rewrite their own agent or scaffold (ADAS, Gödel Agent, SICA, Darwin Godel Machine, HGM, Live-SWE-agent); (2) self-improving harnesses around a usually frozen backbone (RRSI, Meta-Harness, TTHE, AHE, HarnessX, VERSE, and related §6 work); (3) harnesses that supervise RSI of a *target system* (InfraRSI for training infra; KernelEvolve, CUDA Agent, daVinci-kernel, and robust-kbench for kernels). RSI-Env is an environment in which model weights and the harness may be improved together.
+
+### Papers (29)
+
+*Research papers in which a harness or RSI loop is a first-class contribution. Sorted by year then title.*
+
+| Title | arXiv | GitHub | Year | Venue | Keywords |
+|-------|-------|--------|------|-------|----------|
+| Automated Design of Agentic Systems | [2408.08435](https://arxiv.org/abs/2408.08435) | [GitHub](https://github.com/ShengranHu/ADAS) | 2024 | ICLR 2025 | ADAS, meta-agent-search, archive, agent-design |
+| Gödel Agent: A Self-Referential Agent Framework for Recursive Self-Improvement | [2410.04444](https://arxiv.org/abs/2410.04444) | [GitHub](https://github.com/Arvid-pku/Godel_Agent) | 2024 | ACL 2025 | recursive-self-improvement, self-referential agent, runtime self-update, Gödel machine |
+| A Self-Improving Coding Agent | [2504.15228](https://arxiv.org/abs/2504.15228) | [GitHub](https://github.com/MaximeRobeyns/self_improving_coding_agent) | 2025 | arXiv (preprint, submitted NeurIPS 2025) | self-improving coding agent, no weight updates, scaffold self-edit, SWE-Bench |
+| Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models | [2510.04618](https://arxiv.org/abs/2510.04618) | [GitHub](https://github.com/ace-agent/ace) | 2025 | ICLR 2026 (arXiv preprint Oct 2025) | ACE, context engineering, evolving playbooks, system prompt, agent memory, also-§6 |
+| Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents | [2505.22954](https://arxiv.org/abs/2505.22954) | [GitHub](https://github.com/jennyzzt/dgm) | 2025 | arXiv (preprint) | Darwin Godel Machine, archive search, frozen foundation model, self-improving coding agent |
+| Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine | [2510.21614](https://arxiv.org/abs/2510.21614) | [GitHub](https://github.com/metauto-ai/HGM) | 2025 | arXiv (preprint) | Huxley-Gödel Machine, metaproductivity, clade metric, self-improving coding agent |
+| KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta | [2512.23236](https://arxiv.org/abs/2512.23236) | / | 2025 | ISCA 2026 (arXiv:2512.23236) | agentic kernel coding, graph search, fitness and termination, heterogeneous accelerators |
+| Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly? | [2511.13646](https://arxiv.org/abs/2511.13646) | [GitHub](https://github.com/OpenAutoCoder/live-swe-agent) | 2025 | arXiv (preprint) | live scaffold evolution, self-improving SWE agent, test-time self-modification, SWE-bench |
+| Towards Robust Agentic CUDA Kernel Benchmarking, Verification, and Optimization | [2509.14279](https://arxiv.org/abs/2509.14279) | [GitHub](https://github.com/SakanaAI/robust-kbench) | 2025 | arXiv (preprint) | agentic CUDA, robust kernel benchmark, verification, KernelBench loopholes |
+| Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses | [2604.25850](https://arxiv.org/abs/2604.25850) | [GitHub](https://github.com/china-qijizhifeng/agentic-harness-engineering) | 2026 | arXiv (preprint) | harness evolution, observability, falsifiable edit contracts, coding-agent harness |
+| Causal Improvement Graph for Agentic Harness Optimization | [2610.05039](https://arxiv.org/abs/2610.05039) | / | 2026 | arXiv (preprint) | harness optimization, meta-harness, agentic runtime, graph-governed search loop, also-§6 |
+| CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation | [2602.24286](https://arxiv.org/abs/2602.24286) | [GitHub](https://github.com/BytedTsinghua-SIA/CUDA-Agent) | 2026 | arXiv (preprint) | agentic RL, CUDA kernels, skill-augmented environment, execution-based reward |
+| daVinci-kernel: Co-Evolving Skill Selection, Summarization, and Utilization via RL for GPU Kernel Optimization | [2606.16497](https://arxiv.org/abs/2606.16497) | [GitHub](https://github.com/GAIR-NLP/daVinci-kernel) | 2026 | arXiv (preprint) | agentic RL, evolving skill library, CUDA/Triton kernels, execution-based verification |
+| DREvo: Distilling Recalibrated Historical Experience for Harness Self-Evolution | [2607.26722](https://arxiv.org/abs/2607.26722) | / | 2026 | arXiv (preprint) | harness self-evolution, experience recalibration, scaffold search, LLM agents, also-§6 |
+| EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement | [2608.04968](https://arxiv.org/abs/2608.04968) | [GitHub](https://github.com/junnie00/EvolveNet) | 2026 | arXiv (preprint) | harness evolution, collaborative self-improvement, program aggregation, multi-agent, also-§6 |
+| Harness Evolution as Learning: Approximation, Generalization, and Optimization Limits of Self-Improving Personal Agents | [2609.36892](https://arxiv.org/abs/2609.36892) | [GitHub](https://github.com/ZyGan1999/self-evolving-harness-as-learning) | 2026 | arXiv (preprint) | self-evolving harness, personal agents, harness evaluation benchmark, learning theory (approximation/generalization/optimization), also-§6 |
+| Harness Learning Enables Generalizable Test-Time Adaptation | [2609.35738](https://arxiv.org/abs/2609.35738) | / | 2026 | arXiv (preprint) | harness learning, test-time adaptation, meta-learning over executable programs, reinforcement learning for agent scaffolds, also-§6 |
+| Harness-Zero: Harness Distillation via Agent-as-Harness | [2609.24974](https://arxiv.org/abs/2609.24974) | [GitHub](https://github.com/metaevo-ai/harness-zero) | 2026 | arXiv (preprint) | harness-aware training, harness distillation, agent-as-harness, agent-computer interface, also-§6 |
+| Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses | [2611.22299](https://arxiv.org/abs/2611.22299) | / | 2026 | arXiv (preprint) | self-improving harness, modular validation gates, evaluator tampering, unifying framework |
+| HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry | [2606.14249](https://arxiv.org/abs/2606.14249) | [GitHub](https://github.com/Darwin-Agent/HarnessX) | 2026 | arXiv (preprint) | evolvable harness foundry, trace-driven adaptation, harness-model loop, official project page |
+| InfraRSI: Harnessing Recursive Self-Improvement for Training Infrastructure | [2611.11558](https://arxiv.org/abs/2611.11558) | [GitHub](https://github.com/TokenRhythm/InfraRSI) | 2026 | arXiv (preprint) | training-infrastructure RSI, lock-contract, invariant verification, experience bank |
+| Learning from Research: Toward Lifelong Agent Harness Evolution | [2609.40169](https://arxiv.org/abs/2609.40169) | [GitHub](https://github.com/UCSB-NLP-Chang/ScholarEvolve) | 2026 | arXiv (preprint) | harness evolution, automated agent design, lifelong adaptation, agent scaffold, also-§6 |
+| MESH-Harness: Self-Improving Agent Harnesses via Bandit-Guided Compositional Evolution | [2610.05300](https://arxiv.org/abs/2610.05300) | / | 2026 | arXiv (preprint) | agent harness optimization, compositional evolution, LinUCB bandits, evaluation-budget-constrained search, also-§6 |
+| Meta-Harness: End-to-End Optimization of Model Harnesses | [2603.28052](https://arxiv.org/abs/2603.28052) | [GitHub](https://github.com/stanford-iris-lab/meta-harness) | 2026 | arXiv (preprint, Stanford/MIT) | harness optimization, outer-loop search, agentic proposer, code optimization, also-§6 |
+| Mixture of Self-Improving Branches For Agent Harness Optimization | [2609.37834](https://arxiv.org/abs/2609.37834) | / | 2026 | arXiv (preprint) | harness optimization, recursive self-improvement, branch-and-router, agentic coding, also-§6 |
+| RRSI: Regularized Recursive Self-Improvement of Agent Harnesses | [2609.24972](https://arxiv.org/abs/2609.24972) | [GitHub](https://github.com/google-research/rrsi) | 2026 | arXiv (preprint) | agent harness, recursive self-improvement, harness evolution regularization, agent evaluation, also-§6 |
+| RSI-Env: An Open-Ended Environment for Recursive Self-Improvement of Agents | [2611.01736](https://arxiv.org/abs/2611.01736) | / | 2026 | arXiv (preprint) | RSI environment, model-and-harness co-improvement, host controller, open-ended evaluation |
+| TTHE: Test-Time Harness Evolution | [2607.08124](https://arxiv.org/abs/2607.08124) | [GitHub](https://github.com/junnie00/TTHE) | 2026 | arXiv (preprint) | test-time adaptation, harness evolution, scaffold, agentic search, also-§6 |
+| VERSE: Verified Self-Evolving Optimizer for Agent Harnesses | [2610.02616](https://arxiv.org/abs/2610.02616) | [GitHub](https://github.com/wzekai/VERSE) | 2026 | arXiv (preprint) | harness evolution, self-evolving optimizer, execution-based verification, SWE agent evaluation, also-§6 |
+
+### Posts (essays, blogs & talks) (2)
+
+*Long-form only, same columns as [§2](#2-influential-essays-blogs--talks-44). A blog or engineering post is not a paper row.*
+
+| Title | Author / Org | Type | Year | Link |
+|-------|--------------|------|------|------|
+| Harness Engineering for Self-Improvement | Lilian Weng (Lil'Log; ex-OpenAI) | blog | 2026 | [link](https://lilianweng.github.io/posts/2026-07-04-harness) |
+| KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure | Engineering at Meta | blog | 2026 | [link](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/) |
+
+Both posts are already listed in §2; the rows above are cross-links. The Meta post is the Engineering at Meta blog accompanying the ISCA 2026 paper above.
+
+### Tech reports
+
+This repository already files arXiv documents whose titles or venues say “Technical Report” *inside paper tables* (for example TaoLive, 2608.15763, in §6, and other industry technical reports in §11 / §12 / §14). No additional RSI-specific standalone tech report with a verifiable canonical URL met the inclusion bar in the 2026-11-27 audit. KernelEvolve is an ISCA 2026 paper (Papers) plus an Engineering at Meta blog (Posts). INT21 is vendor documentation, not a tech report.
+
+### Production / vendor documentation (1)
+
+*Same columns as [§1](#1-production-harnesses-sdks--frameworks-25). These are product or vendor pages, not papers. INT21 is included here as on-topic vendor context for independent inference-engine RSI; it is **not** proposed for §1 unless it separately meets that section’s influence bar, and it is **not** counted in the paper total.*
+
+| Name | URL | Year | Org | What it is |
+|------|-----|------|-----|------------|
+| INT21 Inference Engine Factory | [product page](https://int21.ai/products/inference-engine-factory/) | 2026 | INT21 | Vendor description of an agent swarm that searches kernels, drivers, and a serving stack to produce a deployable independent inference engine, validated on the target GPU. Related official essay: [Addressing the Inference Bottleneck](https://int21.ai/insights/addressing-the-inference-bottleneck/). Public docs are not a reproducible method spec; do not treat reported comparisons to SGLang / vLLM / TensorRT-LLM as verified experimental results. |
+
+### Benchmarks & environments (3)
+
+Infrathon is a long-horizon *benchmark* for infrastructure-optimization agents, not itself an RSI method. Evo-Bench and EvoHarnessBench are already in [§13](#13-benchmarks--evaluation-23) and are cross-listed here. RSI-Env is both an environment and a method paper and is listed under Papers.
+
+| Title | arXiv | GitHub | Year | Venue | Keywords |
+|-------|-------|--------|------|-------|----------|
+| Evo-Bench: Can Language Models Improve Agent Harness? | [2608.09096](https://arxiv.org/abs/2608.09096) | [GitHub](https://github.com/RUCAIBox/Evo-Bench) | 2026 | arXiv (preprint) | benchmark, agent harness, harness improvement, LLM agents, also-§13 |
+| EvoHarnessBench: Can Your Agents Keep Pace with an Evolving Harness? | [2609.04280](https://arxiv.org/abs/2609.04280) | / | 2026 | arXiv (preprint) | benchmark, harness evolution, harness-induced forgetting, agent retention/adaptation, also-§13 |
+| Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization | [2611.11995](https://arxiv.org/abs/2611.11995) | [GitHub](https://github.com/InfrathonX/Infrathon) | 2026 | arXiv (preprint) | infrastructure benchmark, long-horizon evaluation, isolated judge, premature completion |
+
+### See also
+
+- Adjacent posts already in [§2](#2-influential-essays-blogs--talks-44), not first-class Harness-for-RSI entries: Anthropic, [Harness design for long-running application development](https://www.anthropic.com/research/harness-design-long-running-apps); [HarnessTax](https://harnesstax.github.io); HumanLayer, [Why Software Factories Fail](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md).
+- Adjacent papers already listed, not duplicated as rows here: Voyager and HASP ([§6](#6-the-agent-harness--scaffold-33)); *What Does a Harness Repair?* ([§6](#6-the-agent-harness--scaffold-33); current arXiv title has been updated in [v4](https://arxiv.org/abs/2610.05533)); HEAR ([§6](#6-the-agent-harness--scaffold-33), harness–engine serving interface, not an RSI method); Harness-of-Harness ([§11](#11-code--swe-agents-15)); Training Agents to Evolve with Their Harness (TaoLive technical report, [§6](#6-the-agent-harness--scaffold-33)) and VACE ([§14](#14-reasoning-models--test-time-scaling-for-agents-33)) for harness-aware / co-evolutionary training.
+- Official project pages named by papers, used in provenance but not substituted for a missing official method repo: [RRSI](https://regularized-rsi.com/), [EvoHarnessBench](https://mas-orchestra.salesforceresearch.ai/evoharness/), [ADAS](https://www.shengranhu.com/ADAS/), [CUDA Agent](https://cuda-agent.github.io/), [HarnessX](https://darwin-agent.github.io/HarnessX/), [Meta-Harness](https://yoonholee.com/meta-harness/).
+
+## 9. Memory-Augmented Agents (19)
 
 *Memory and context management — how a harness carries state across turns and sessions.*
 
@@ -288,7 +372,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Self-Designed Evaluators and Warm Memory for Long-Horizon Agents | [2609.33717](https://arxiv.org/abs/2609.33717) | / | 2026 | arXiv (preprint) | agent memory architecture, self-designed evaluators, retry loop, label-free self-improvement |
 | When Should Agents Check External State? Budgeting Observations for Stored Intentions | [2609.37125](https://arxiv.org/abs/2609.37125) | / | 2026 | arXiv (preprint) | memory architecture, prospective memory, observation budgeting, harness policy |
 
-## 9. Multi-Agent Systems (15)
+## 10. Multi-Agent Systems (15)
 
 *Orchestrating multiple agents that debate, collaborate, or specialise.*
 
@@ -310,7 +394,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Two Calls Beat Five Agents: Evaluating Multi-Agent Pipelines Against Self-Refinement for Local Language Models | [2607.26922](https://arxiv.org/abs/2607.26922) | / | 2026 | arXiv (preprint) | multi-agent pipelines, self-refinement, local/small models, harness evaluation |
 | Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems | [2607.07989](https://arxiv.org/abs/2607.07989) | [GitHub](https://github.com/YufeiXIA/AgentLocate) | 2026 | COLM 2026 | multi-agent failure localization, LLM-as-judge verification loop, MAST failure taxonomy, harness diagnostics |
 
-## 10. Code & SWE Agents (15)
+## 11. Code & SWE Agents (15)
 
 *Domain harnesses for software engineering — the cleanest measurable testbed for harness design.*
 
@@ -332,7 +416,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents | [2609.39982](https://arxiv.org/abs/2609.39982) | / | 2026 | arXiv (preprint) | test-time scaling, action verification, terminal agent, harness scaffold |
 | openJiuwen: Beyond Static Harnesses for Long-Horizon Coding Agents | [2608.27969](https://arxiv.org/abs/2608.27969) | [GitHub](https://github.com/openJiuwen-ai/jiuwenswarm) | 2026 | arXiv (preprint) | agent harness, coding agents, multi-agent orchestration, SWE-bench |
 
-## 11. Web, GUI & Computer-Use Agents (23)
+## 12. Web, GUI & Computer-Use Agents (23)
 
 *Domain harnesses for the web, desktop GUIs, and computer use.*
 
@@ -362,7 +446,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation | [2607.06118](https://arxiv.org/abs/2607.06118) | [GitHub](https://github.com/Mininglamp-AI/WebRetriever) | 2026 | arXiv (preprint) | web-agent benchmark, evaluation harness, LLM-as-judge, browser agent |
 | Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents | [2608.17319](https://arxiv.org/abs/2608.17319) | / | 2026 | arXiv (preprint) | browser agent, agent-computer interface, harness-aware training, web benchmark |
 
-## 12. Benchmarks & Evaluation (22)
+## 13. Benchmarks & Evaluation (23)
 
 *Evaluation suites that stress-test agent harnesses.*
 
@@ -384,6 +468,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | Grounded Checklist Partial Credit for Agent Skill Trajectories | [2608.27487](https://arxiv.org/abs/2608.27487) | / | 2026 | arXiv (preprint) | agent evaluation, partial-credit scoring, agent skills (SKILL.md), SkillsBench |
 | HarnessOpt-Bench: Evaluating LLMs at Harness Optimization | [2608.06301](https://arxiv.org/abs/2608.06301) | / | 2026 | arXiv (preprint) | benchmark, harness-optimization, trusted-execution, agent-evaluation |
 | HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses | [2608.06984](https://arxiv.org/abs/2608.06984) | / | 2026 | arXiv (preprint) | safety benchmark, harness evaluation, persistent carriers, cross-harness containment |
+| Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization | [2611.11995](https://arxiv.org/abs/2611.11995) | [GitHub](https://github.com/InfrathonX/Infrathon) | 2026 | arXiv (preprint) | infrastructure benchmark, long-horizon evaluation, isolated judge, premature completion |
 | Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading | [2607.08964](https://arxiv.org/abs/2607.08964) | [GitHub](https://github.com/zli12321/LHTB) | 2026 | arXiv (preprint) | benchmark, long-horizon agents, terminal agents, dense reward grading |
 | PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting | [2606.08878](https://arxiv.org/abs/2606.08878) | [GitHub](https://github.com/WhymustIhaveaname/PerspectiveGap) | 2026 | arXiv (preprint) | benchmark, orchestration prompts, sub-agent context, multi-agent harness |
 | Rethinking the Evaluation of Harness Evolution for Agents | [2607.12227](https://arxiv.org/abs/2607.12227) | [GitHub](https://github.com/rethinking-harness-evolution/code) | 2026 | arXiv (preprint) | harness evolution, evaluation methodology, test-time scaling, benchmark study |
@@ -391,7 +476,7 @@ The agent loop is therefore a *component* of the harness — its core execution 
 | SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? | [2608.19799](https://arxiv.org/abs/2608.19799) | [GitHub](https://github.com/OpenMOSS/SWE-bench-Science) | 2026 | arXiv (preprint) | SWE-bench-family benchmark, coding agents, scientific software engineering, failure analysis |
 | UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks | [2607.08768](https://arxiv.org/abs/2607.08768) | [GitHub](https://github.com/HKU-MMLab/UniClawBench) | 2026 | arXiv (preprint) | benchmark, harness-vs-model study, proactive agents, real-world environments |
 
-## 13. Reasoning Models & Test-Time Scaling for Agents (33)
+## 14. Reasoning Models & Test-Time Scaling for Agents (33)
 
 *Training the loop: reasoning models, test-time scaling, and multi-turn RL for agents.*
 
